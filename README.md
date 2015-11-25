@@ -26,4 +26,4 @@ Hennadij, Oleygen@gmail.com
 
 ## License
 
-AppusContactPicker is available under the MIT license. See the LICENSE file for more info.
+AppusContactPicker is available under the Apache License. See the LICENSE file for more info.
