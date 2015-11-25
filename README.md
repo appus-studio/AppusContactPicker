@@ -31,13 +31,13 @@ We did built in two kinds of views for usage
 Add UIScrollView to your storyboard. Set custom class as "ContactPickerTagsView".
 
 Add #import "ContactPickerTagsView.h" to your ViewController class. Drag outlet to your ViewControllerClass. Component is ready for use. 
-```
+```objective-c
 @property (weak, nonatomic) IBOutlet ContactPickerTagsView *contactPickerTagsView;
 ```
 
 You can set colors of tags using TagViewStyle class.
 
-```
+```objective-c
 	TagViewStyle *style = [[TagViewStyle alloc] init];
    	style.borderColor = [UIColor grayColor];
 	style.backgroundColor = [UIColor clearColor];
@@ -48,14 +48,14 @@ You can set colors of tags using TagViewStyle class.
 
 To show contacts you can call 
 
-```
+```objective-c
 	[self.contactPickerTagsView showContactViewController];
 ```
 
 When you did choose any phone number just tap on it and it will be added to your contactPickerTagsView. 
 You can add contacts manually using Recipient.h class instances
 
-```
+```objective-c
 	Recipient *recipient = [[Recipient alloc] init];
 	recipient.phoneNumber = @"555-44-550";
   	[self.contactPickerTagsView addRecipient:recipient];
@@ -63,7 +63,10 @@ You can add contacts manually using Recipient.h class instances
 
 _NOTE: recipients with equal numbers won't be added._
 
-All your data stores in ```self.contactPickerTagsView.recipients```
+All your data stores in 
+```objective-c
+self.contactPickerTagsView.recipients
+```
 
 You can type number manually. ContactPickerTagsView support autocompletion. If numbers which you did enter match phone numbers in your contacts book you will see popup table with available contacts.
 
@@ -72,13 +75,13 @@ Add UITableView to your storyboard. Set custom class as "ContactPickerTableView"
 
 Add #import "ContactPickerTableView.h" to your ViewController class. Drag outlet to your ViewControllerClass. Component is ready for use. 
 
-```
+```objective-c
 	@property (weak, nonatomic) IBOutlet ContactPickerTableView *contactPickerTableView;
 ```
 
 To show contacts you can call 
 
-```
+```objective-c
 	[self.contactPickerTagsView showContactViewController];
 ```
 
@@ -86,14 +89,17 @@ When you did choose any phone number just tap on it and it will be added to your
 
 You can add contacts manually using Recipient.h class instances
 
- ```
+ ```objective-c
 	Recipient *recipient = [[Recipient alloc] init];
 	recipient.phoneNumber = @"555-44-550";
 	[self.contactPickerTableView addRecipient:recipient];
  ```
 _NOTE: recipients with equal numbers won't be added._
 
-All your data stores in ```self.contactPickerTableView.recipients```
+All your data stores in 
+```objective-c 
+self.contactPickerTableView.recipients
+```
 
 ## Author
 
