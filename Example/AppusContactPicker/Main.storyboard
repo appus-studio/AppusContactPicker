@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Appus View Controller-->
         <scene sceneID="wQg-tq-qST">
             <objects>
                 <viewController id="whP-gf-Uak" customClass="AppusViewController" sceneMemberID="viewController">
@@ -16,12 +16,148 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtE-1s-PfX">
+                                <rect key="frame" x="20" y="20" width="560" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="Os3-6B-EJc"/>
+                                </constraints>
+                                <state key="normal" title="TagsView"/>
+                                <connections>
+                                    <segue destination="hI4-Ob-zkk" kind="show" id="GaJ-eH-ZEo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0k-yC-5hc">
+                                <rect key="frame" x="20" y="170" width="560" height="142"/>
+                                <state key="normal" title="TableView"/>
+                                <connections>
+                                    <segue destination="lw7-oX-df3" kind="show" id="UQZ-x0-dAh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b0k-yC-5hc" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="3Da-VS-Vp8"/>
+                            <constraint firstItem="b0k-yC-5hc" firstAttribute="width" secondItem="EtE-1s-PfX" secondAttribute="width" id="7LN-yQ-XZx"/>
+                            <constraint firstItem="EtE-1s-PfX" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="9j8-tb-W0T"/>
+                            <constraint firstItem="EtE-1s-PfX" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="C8g-xn-whO"/>
+                            <constraint firstItem="EtE-1s-PfX" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="Caq-Vg-IzH"/>
+                            <constraint firstItem="b0k-yC-5hc" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="OhS-v6-yB1"/>
+                            <constraint firstItem="EtE-1s-PfX" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" id="UAs-VH-kUB"/>
+                            <constraint firstItem="b0k-yC-5hc" firstAttribute="height" secondItem="EtE-1s-PfX" secondAttribute="height" id="bt2-UY-t0D"/>
+                            <constraint firstItem="b0k-yC-5hc" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="j5K-9J-oAF"/>
+                            <constraint firstItem="b0k-yC-5hc" firstAttribute="top" secondItem="EtE-1s-PfX" secondAttribute="bottom" constant="8" id="pDN-3a-3Om"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="433"/>
+        </scene>
+        <!--Appus Example Tags View Controller-->
+        <scene sceneID="Qbu-zh-oUt">
+            <objects>
+                <viewController id="hI4-Ob-zkk" customClass="AppusExampleTagsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7rP-tF-yrL"/>
+                        <viewControllerLayoutGuide type="bottom" id="ILy-7v-exT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2j0-bu-CgU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awc-q7-gry">
+                                <rect key="frame" x="230" y="28" width="140" height="30"/>
+                                <state key="normal" title="Show contact picker"/>
+                                <connections>
+                                    <action selector="showContactPicker:" destination="hI4-Ob-zkk" eventType="touchUpInside" id="bDx-8M-tC6"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CxD-nT-WSz" customClass="ContactPickerTagsView">
+                                <rect key="frame" x="20" y="196" width="560" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="M1y-rn-Sut"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTK-73-pQm">
+                                <rect key="frame" x="244" y="66" width="113" height="30"/>
+                                <state key="normal" title="Print datasource"/>
+                                <connections>
+                                    <action selector="printDatasource:" destination="hI4-Ob-zkk" eventType="touchUpInside" id="R2c-pE-0jH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OTK-73-pQm" firstAttribute="centerX" secondItem="2j0-bu-CgU" secondAttribute="centerX" id="0EG-Qs-Frg"/>
+                            <constraint firstItem="CxD-nT-WSz" firstAttribute="leading" secondItem="2j0-bu-CgU" secondAttribute="leadingMargin" id="D51-7q-ObK"/>
+                            <constraint firstItem="OTK-73-pQm" firstAttribute="top" secondItem="awc-q7-gry" secondAttribute="bottom" constant="8" id="H8F-JP-p9C"/>
+                            <constraint firstItem="awc-q7-gry" firstAttribute="top" secondItem="7rP-tF-yrL" secondAttribute="bottom" constant="8" id="SGE-VE-KKj"/>
+                            <constraint firstItem="CxD-nT-WSz" firstAttribute="top" secondItem="OTK-73-pQm" secondAttribute="bottom" constant="100" id="bQF-JL-g74"/>
+                            <constraint firstItem="awc-q7-gry" firstAttribute="centerX" secondItem="2j0-bu-CgU" secondAttribute="centerX" id="gqh-nC-ukD"/>
+                            <constraint firstItem="CxD-nT-WSz" firstAttribute="trailing" secondItem="2j0-bu-CgU" secondAttribute="trailingMargin" id="u5R-sF-OLC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contactPickerTagsView" destination="CxD-nT-WSz" id="Ydk-Gz-AJw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="csS-Ac-9bL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1211" y="100"/>
+        </scene>
+        <!--Appus Example Table View Controller-->
+        <scene sceneID="boq-Ok-pJP">
+            <objects>
+                <viewController id="lw7-oX-df3" customClass="AppusExampleTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u6w-ox-nWZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="QUb-gm-8Qn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H8F-vo-325">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypb-ds-bfT">
+                                <rect key="frame" x="244" y="58" width="113" height="30"/>
+                                <state key="normal" title="Print datasource"/>
+                                <connections>
+                                    <action selector="printDatasource:" destination="lw7-oX-df3" eventType="touchUpInside" id="LPO-Bg-aRG"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R4i-XZ-kOF" customClass="ContactPickerTableView">
+                                <rect key="frame" x="0.0" y="96" width="600" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="MFo-rG-o2a"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwT-p0-aRk">
+                                <rect key="frame" x="230" y="20" width="140" height="30"/>
+                                <state key="normal" title="Show contact picker"/>
+                                <connections>
+                                    <action selector="showContactPicker:" destination="lw7-oX-df3" eventType="touchUpInside" id="ykv-9v-4hk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R4i-XZ-kOF" firstAttribute="width" secondItem="H8F-vo-325" secondAttribute="width" id="4eY-Wr-1QX"/>
+                            <constraint firstItem="ypb-ds-bfT" firstAttribute="centerX" secondItem="H8F-vo-325" secondAttribute="centerX" id="7vC-Qp-V8f"/>
+                            <constraint firstItem="R4i-XZ-kOF" firstAttribute="centerX" secondItem="H8F-vo-325" secondAttribute="centerX" id="Ejb-js-Mz4"/>
+                            <constraint firstItem="kwT-p0-aRk" firstAttribute="top" secondItem="u6w-ox-nWZ" secondAttribute="bottom" id="HT3-he-obz"/>
+                            <constraint firstItem="ypb-ds-bfT" firstAttribute="top" secondItem="kwT-p0-aRk" secondAttribute="bottom" constant="8" id="OHp-BD-oO9"/>
+                            <constraint firstItem="R4i-XZ-kOF" firstAttribute="top" secondItem="ypb-ds-bfT" secondAttribute="bottom" constant="8" id="Uux-24-Sjc"/>
+                            <constraint firstItem="kwT-p0-aRk" firstAttribute="centerX" secondItem="H8F-vo-325" secondAttribute="centerX" id="idj-hE-cbS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contactPickerTableView" destination="R4i-XZ-kOF" id="lUk-38-Nsa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dn1-5h-b51" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1210" y="837"/>
         </scene>
     </scenes>
 </document>

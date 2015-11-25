@@ -28,18 +28,18 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '9.0'
   s.requires_arc = true
 
-  #s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -lAPUContactPickerFramework' }
-  #s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -lAPUContactPickerFramework'}
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -lAppusContactPickerFramework' }
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -lAppusContactPickerFramework'}
 
   s.source_files = 'Pod/Classes/**/*'
 
-  #s.ios.vendored_library = 'Pod/Libraries/libAppusContactPickerFramework.a'
-  #s.preserve_paths = 'Pod/Libraries/libAppusContactPickerFramework.a'
-  #s.libraries = 'AppusContactPickerFramework'
+  s.ios.vendored_library = 'Pod/Libraries/libAppusContactPickerFramework.a'
+  s.preserve_paths = 'Pod/Libraries/libAppusContactPickerFramework.a'
+  s.libraries = 'AppusContactPickerFramework'
  
-  #s.resource = 'Pod/Assets/ContactPickerFrameworkResources.bundle'
+  s.resource = 'Pod/Assets/ContactPickerFrameworkResources.bundle'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   #s.public_header_files = 'Pod/Classes/**/*.h'
+   #s.frameworks = 'UIKit', 'MapKit'
+   #s.dependency 'AFNetworking', '~> 2.3'
 end

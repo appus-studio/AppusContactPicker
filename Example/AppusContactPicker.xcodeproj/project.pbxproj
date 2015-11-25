@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4887023E1C06183000913977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4887023D1C06183000913977 /* Main.storyboard */; };
+		488702461C06189F00913977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488702451C06189F00913977 /* LaunchScreen.storyboard */; };
+		488702491C061A2D00913977 /* AppusExampleTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488702481C061A2D00913977 /* AppusExampleTagsViewController.m */; };
+		4887024C1C061B0400913977 /* AppusExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4887024B1C061B0400913977 /* AppusExampleTableViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -20,7 +24,6 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		93F2EA6F445E5E6F054D9466 /* Pods_AppusContactPicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A36F7390D2526AAA9F070213 /* Pods_AppusContactPicker_Example.framework */; };
 		B26F3EB44048E7A5C6C9F895 /* Pods_AppusContactPicker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEB28710ACCFC4A3140F7D7 /* Pods_AppusContactPicker_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4887023D1C06183000913977 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		488702451C06189F00913977 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		488702471C061A2D00913977 /* AppusExampleTagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppusExampleTagsViewController.h; sourceTree = "<group>"; };
+		488702481C061A2D00913977 /* AppusExampleTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppusExampleTagsViewController.m; sourceTree = "<group>"; };
+		4887024A1C061B0400913977 /* AppusExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppusExampleTableViewController.h; sourceTree = "<group>"; };
+		4887024B1C061B0400913977 /* AppusExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppusExampleTableViewController.m; sourceTree = "<group>"; };
 		48A46535772EEECBEC74872A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4D3372E4DC9A1E9ACBB705F3 /* Pods-AppusContactPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppusContactPicker_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppusContactPicker_Tests/Pods-AppusContactPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* AppusContactPicker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppusContactPicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +66,6 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9E13CBBB9DFA016289D099E4 /* Pods-AppusContactPicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppusContactPicker_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppusContactPicker_Example/Pods-AppusContactPicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A36F7390D2526AAA9F070213 /* Pods_AppusContactPicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppusContactPicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4406A49FB8629DFE1B7A5E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -130,9 +138,11 @@
 		6003F593195388D20070C39A /* Example for AppusContactPicker */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* AppusAppDelegate.h */,
-				6003F59D195388D20070C39A /* AppusAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				4887023D1C06183000913977 /* Main.storyboard */,
+				4887024A1C061B0400913977 /* AppusExampleTableViewController.h */,
+				4887024B1C061B0400913977 /* AppusExampleTableViewController.m */,
+				488702471C061A2D00913977 /* AppusExampleTagsViewController.h */,
+				488702481C061A2D00913977 /* AppusExampleTagsViewController.m */,
 				6003F5A5195388D20070C39A /* AppusViewController.h */,
 				6003F5A6195388D20070C39A /* AppusViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -145,6 +155,9 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6003F59C195388D20070C39A /* AppusAppDelegate.h */,
+				6003F59D195388D20070C39A /* AppusAppDelegate.m */,
+				488702451C06189F00913977 /* LaunchScreen.storyboard */,
 				6003F595195388D20070C39A /* AppusContactPicker-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -276,7 +289,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				4887023E1C06183000913977 /* Main.storyboard in Resources */,
+				488702461C06189F00913977 /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -390,9 +404,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488702491C061A2D00913977 /* AppusExampleTagsViewController.m in Sources */,
 				6003F59E195388D20070C39A /* AppusAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* AppusViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				4887024C1C061B0400913977 /* AppusExampleTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
