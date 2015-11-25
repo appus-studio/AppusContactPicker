@@ -4,6 +4,9 @@
 [![Version](https://img.shields.io/cocoapods/v/AppusContactPicker.svg?style=flat)](http://cocoapods.org/pods/AppusContactPicker)
 [![License](https://img.shields.io/cocoapods/l/AppusContactPicker.svg?style=flat)](http://cocoapods.org/pods/AppusContactPicker)
 [![Platform](https://img.shields.io/cocoapods/p/AppusContactPicker.svg?style=flat)](http://cocoapods.org/pods/AppusContactPicker)
+# Demo
+
+![](https://github.com/alexey-kubas-appus/AppusContactPicker/blob/master/Resource/example2.gif)
 
 ## Usage
 
