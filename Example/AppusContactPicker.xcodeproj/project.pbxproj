@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		48A46535772EEECBEC74872A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4D3372E4DC9A1E9ACBB705F3 /* Pods-AppusContactPicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppusContactPicker_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppusContactPicker_Tests/Pods-AppusContactPicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* AppusContactPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = AppusContactPicker.app; path = AppusContactPicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* AppusContactPicker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppusContactPicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -108,7 +108,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* AppusContactPicker.app */,
+				6003F58A195388D20070C39A /* AppusContactPicker_Example.app */,
 				6003F5AE195388D20070C39A /* Tests.xctest */,
 			);
 			name = Products;
@@ -213,7 +213,7 @@
 			);
 			name = AppusContactPicker_Example;
 			productName = AppusContactPicker;
-			productReference = 6003F58A195388D20070C39A /* AppusContactPicker.app */;
+			productReference = 6003F58A195388D20070C39A /* AppusContactPicker_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* AppusContactPicker_Tests */ = {
@@ -515,6 +515,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppusContactPicker/AppusContactPicker-Prefix.pch";
 				INFOPLIST_FILE = "AppusContactPicker/AppusContactPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -530,6 +531,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppusContactPicker/AppusContactPicker-Prefix.pch";
 				INFOPLIST_FILE = "AppusContactPicker/AppusContactPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
