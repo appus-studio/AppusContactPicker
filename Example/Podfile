@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'AppusContactPicker_Example', :exclusive => true do
+  pod "AppusContactPicker", :path => "../"
+end
+
+target 'AppusContactPicker_Tests', :exclusive => true do
+  pod "AppusContactPicker", :path => "../"
+
+  
+end
