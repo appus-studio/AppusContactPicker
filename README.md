@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+Available for iOS 9.0 and higher
+
 ## Installation
 
 AppusContactPicker is available through [CocoaPods](http://cocoapods.org). To install
@@ -20,9 +22,71 @@ it, simply add the following line to your Podfile:
 pod "AppusContactPicker"
 ```
 
+## Usage
+
+We did built in two kinds of views for usage
+
+1. ContactPickerTagsView
+
+Add UIScrollView to your storyboard. Set custom class as "ContactPickerTagsView".
+
+
+Add #import "ContactPickerTagsView.h" to your ViewController class. Drag outlet to your ViewControllerClass. Component is ready for use. 
+
+@property (weak, nonatomic) IBOutlet ContactPickerTagsView *contactPickerTagsView;
+
+You can set colors of tags using TagViewStyle class.
+
+ TagViewStyle *style = [[TagViewStyle alloc] init];
+    style.borderColor = [UIColor grayColor];
+    style.backgroundColor = [UIColor clearColor];
+    style.textColor = [UIColor blackColor];
+    style.deleteColor = [UIColor redColor];
+    self.contactPickerTagsView.tagViewStyle = style;
+
+To show contacts you can call 
+    [self.contactPickerTagsView showContactViewController];
+
+When you did choose any phone number just tap on it and it will be added to your contactPickerTagsView. 
+You can add contacts manually using Recipient.h class instances
+
+ Recipient *recipient = [[Recipient alloc] init];
+    recipient.phoneNumber = @"555-44-550";
+    
+    [self.contactPickerTagsView addRecipient:recipient];
+
+    NOTE: recipients with equal numbers won't be added.
+
+All your data stores in self.contactPickerTagsView.recipients array.
+
+You can type number manually. ContactPickerTagsView support autocompletion. If numbers which you did enter match phone numbers in your contacts book you will see popup table with available contacts.
+
+2. ContactPickerTableView
+Add UITableView to your storyboard. Set custom class as "ContactPickerTableView".
+
+Add #import "ContactPickerTableView.h" to your ViewController class. Drag outlet to your ViewControllerClass. Component is ready for use. 
+
+@property (weak, nonatomic) IBOutlet ContactPickerTableView *contactPickerTableView;
+
+To show contacts you can call 
+    [self.contactPickerTagsView showContactViewController];
+
+When you did choose any phone number just tap on it and it will be added to your contactPickerTagsView. 
+
+You can add contacts manually using Recipient.h class instances
+
+ Recipient *recipient = [[Recipient alloc] init];
+    recipient.phoneNumber = @"555-44-550";
+    
+    [self.contactPickerTableView addRecipient:recipient];
+
+    NOTE: recipients with equal numbers won't be added.
+
+	All your data stores in self.contactPickerTableView.recipients array.
+
 ## Author
 
-Hennadij, Oleygen@gmail.com
+Hennadij, hennadii.oleynik@appus.me
 
 ## License
 
