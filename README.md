@@ -71,6 +71,7 @@ self.contactPickerTagsView.recipients
 You can type number manually. ContactPickerTagsView support autocompletion. If numbers which you did enter match phone numbers in your contacts book you will see popup table with available contacts.
 
 2. ContactPickerTableView
+
 Add UITableView to your storyboard. Set custom class as "ContactPickerTableView".
 
 Add #import "ContactPickerTableView.h" to your ViewController class. Drag outlet to your ViewControllerClass. Component is ready for use. 
