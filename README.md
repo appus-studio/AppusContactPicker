@@ -1,5 +1,8 @@
 # AppusContactPicker
 
+Made by [![Appus Studio](https://github.com/alexey-kubas-appus/AppusContactPicker/blob/master/Resource/appus.png)](https://appus.software)
+
+
 [![CI Status](http://img.shields.io/travis/Hennadij/AppusContactPicker.svg?style=flat)](https://travis-ci.org/Hennadij/AppusContactPicker)
 [![Version](https://img.shields.io/cocoapods/v/AppusContactPicker.svg?style=flat)](http://cocoapods.org/pods/AppusContactPicker)
 [![License](https://img.shields.io/cocoapods/l/AppusContactPicker.svg?style=flat)](http://cocoapods.org/pods/AppusContactPicker)
@@ -107,7 +110,7 @@ self.contactPickerTableView.recipients
 
 ## Author
 
-Hennadij, hennadii.oleynik@appus.me
+Hennadij, hennadii.oleynik@appus.me, [Appus Studio](https://appus.software)
 
 ## License
 
